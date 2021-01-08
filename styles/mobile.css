@@ -9,6 +9,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  width: 100%;
+}
+
 button {
   border: none;
   background-color: #00F3BB;
@@ -94,5 +98,45 @@ header .hello-world {
 header .hello-world button {
   position: absolute;
   top: 27.5rem;
+}
+
+.episodes {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  height: 120.3rem;
+}
+
+.episodes h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 4.2rem;
+  position: absolute;
+  left: 5%;
+  position: absolute;
+  top: 41.1rem;
+  color: #FFFFFF;
+}
+
+.episodes .iframes-container {
+  position: absolute;
+  top: 47.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.episodes .iframes-container iframe {
+  border: none;
+  height: 232px;
+  width: 93.1%;
+  margin-bottom: 11px;
 }
 /*# sourceMappingURL=mobile.css.map */
