@@ -4,50 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast Channel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 728px)">
 </head>
 <body>
     <header>
         <nav>
             <img src="./assets/logo.svg" alt="logo.svg">
-            <div class="menu-button">
-                <div class="menu-button-lines"></div>
-                <div class="menu-button-lines"></div>
-                <div class="menu-button-lines"></div>
+            <div class="menu">
+                <input type="checkbox">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>    
+                <ul>
+                    <li><a href="#episodes">EPISODIOS</a></li>
+                    <li><a href="#us">NOSOTROS</a></li>
+                    <li><a href="#guests">ENTREVISTAS</a></li>
+                    <li><a href="#topics">TÓPICOS</a></li>
+                </ul>
             </div>
         </nav>
-        <section class="hello-world">
-            <div class="title">
+        <section>
+            <div class="header-title">
                 <span>Hello </span>
                 <span class="world">world </span><br>
                 <span>pale blue dot.</span>
             </div>
-            <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <button>CONOCÉ MÁS</button>
+            <div class="header-text">
+                <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            </div>      
+            <div class="header-button">
+                <button>CONOCÉ MÁS</button>
+            </div>
         </section>
     </header>
     <main>
-        <section class="episodes">
+        <section class="episodes" id="episodes">
             <h2>Episodios</h2>
+            <div class="episodes-background"></div>
             <div class="iframes-container">
                 <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" scrolling="no" class="podcast1" allow="encrypted-media" ></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="podcast2" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" class="podcast3" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" class="podcast4" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" class="podcast4" allow="encrypted-media"></iframe>
             </div>
         </section>
-        <section class="us">
-            <!-- <div class="us-image">
+        <section class="us" id="us">
+            <div class="us-image">
                 <img class="image" src="./assets/phone.png" alt="The Secret History of Women in Coding">
-            </div> -->
+            </div>
+            <h2>De dónde venimos</h2>
+            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </section>
-        <section class="guests"></section>
-        <section class="topics"></section>
-        <section class="novelties"></section>
-        <footer>
+        <section class="guests" id="guests">
+            <h2>Invitadas/os estelares</h2>
+            <div class="images-container">
+                <img src="./assets/grace-hopper.png" alt="Grace Hoper">
+                <img src="./assets/Katie-Bouman.png" alt="Katie Bouman">
+                <img src="./assets/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="./assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A.Univac computer">
+                <img src="./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators">
+                <img src="./assets/susan-kare.png" alt="Susan Kare">
+            </div>
+        </section>
+        <section class="topics" id="topics">
+            <h2>Algunos de nuestros temas</h2>
+            <div>
+                <img src="./assets/icon1.svg" alt="Trabajo remoto">
+                <h3>Trabajo remoto</h3>
+            </div>
+            <div>
+                <img src="./assets/icon2.svg" alt="Repensando la programación">
+                <h3>Repensando la programación</h3>
+            </div>
+            <div>
+                <img src="./assets/icon3.svg" alt="Bases del código">
+                <h3>Bases del código</h3>
+            </div>
+            <div>
+                <img src="./assets/icon4.svg" alt="Seguridad informática">
+                <h3>Seguridad informática</h3>
+            </div>
+        </section>
+        <section class="novelties">
+            <h2>¿Querés las últimas novedades?</h2>
+            <div class="novelties-background"></div>
+            <button>ESCUCHÁ LOS EPISODIOS</button>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2019&mdash; Hello blue pale dot</p>
+        <div class="icons-container">
+            <i class="fab fa-spotify"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
     </footer>
 </body>
 </html>
