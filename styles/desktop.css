@@ -85,27 +85,27 @@ header nav img {
   font-weight: 400;
 }
 
-section .header-title {
+.header-content .header-title {
   margin: 12rem 13.9% 0 13.9%;
   font-size: 6.4rem;
 }
 
-section .header-title .dot {
+.header-content .header-title .dot {
   color: #0000EC;
 }
 
 @media (max-width: 1024px) {
-  section .header-title {
+  .header-content .header-title {
     font-size: 4.8rem;
   }
 }
 
-section .header-text {
+.header-content .header-text {
   width: 628px;
   margin-left: 13.9%;
 }
 
-section .header-button {
+.header-content .header-button {
   margin-top: 5.6rem;
   margin-left: 13.9%;
   width: 15.7%;
