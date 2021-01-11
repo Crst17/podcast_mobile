@@ -228,6 +228,12 @@ header .header-button {
   margin-top: 2.4rem;
 }
 
+@media (min-width: 700px) {
+  .episodes .episodes-background {
+    height: 74.5rem;
+  }
+}
+
 .episodes h2 {
   color: #FFFFFF;
   margin-bottom: 2.1rem;

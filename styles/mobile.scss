@@ -223,6 +223,10 @@ header {
         @include background-gradient();
         height: 130rem;
         margin-top: 2.4rem;
+
+        @media (min-width: 700px) {
+            height: 74.5rem;
+        }
     }
 
     h2 {
