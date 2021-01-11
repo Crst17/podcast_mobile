@@ -1,0 +1,233 @@
+$button-background: #00F3BB;
+$text-color: #060A24;
+$white: #FFFFFF;
+$menu-background: #0000EC;
+
+$tablet-size: 480px;
+$small-screen-size: 768px;
+$desktop-size: 1024px;
+
+h2 {
+    font-size: 4.8rem;
+    margin-left: 13.9%;
+}
+
+P {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0;
+}
+
+button {
+    margin: 0;
+}
+
+header {
+    nav {
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        padding: 0 6.9%;
+
+        img {
+            width: 3.6rem;
+            height: 3.6rem;
+            position: static;
+
+        }
+    }
+}
+
+.menu {
+
+    input, span {
+        visibility: hidden;
+        position: static;
+        display: inline;
+        height: 0;
+    }
+    
+    ul {
+        max-height: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        height: 8rem;
+        
+
+        li {
+            margin-left: 3.3%;
+            margin-bottom: 0;
+            &:nth-child(1) {
+                margin-top: 0rem;
+            }
+
+            &:nth-child(4) {
+                margin-right: 6.9%;
+            }
+        }
+
+        a {
+            color: $text-color;
+            margin-top: 0rem;
+            margin-left: 0rem;
+        }
+    }
+}
+
+section {
+
+    .header-title {
+        margin: 12rem 13.9% 0 13.9%;
+        font-size: 6.4rem;
+        .dot {
+            color: $menu-background;
+        }
+        @media (max-width: $desktop-size) {
+            font-size: 4.8rem;
+        }
+    }
+    .header-text {
+        width: 628px;
+        margin-left: 13.9%;
+    }
+
+    .header-button {
+        margin-top: 5.6rem;
+        margin-left: 13.9%;
+        width: 15.7%;
+        min-width: 22.6rem;
+    }
+}
+
+.episodes {
+    padding-top: 18.6rem;
+    
+    h2 {
+        margin-bottom: 2.6rem;
+    }
+
+    .episodes-background {
+        height: 95rem;
+    }
+
+    .iframes-container {
+       width: 100%; 
+    }
+}
+
+.us {
+    position: relative;
+    top: 0; 
+    margin-bottom: 0;
+    height: 62.4rem;
+
+    .us-image {
+        height: 66rem;
+        width: 31.8%;
+        display: inline-block;
+        position: relative;
+        left: 13.5%;
+        top: -10rem;
+    }
+    
+    h2 {
+        margin-left: 0;
+        left: 50%;
+        position: absolute;
+        top: 7rem;
+    }
+
+    p {
+        position: absolute;
+        left: 50%;
+        top: 17rem;
+        width: 32.2%;
+    }
+}
+
+.guests {
+
+    .images-container{
+        width: 100%;
+        margin-top: 3.6rem;
+
+        img {
+            width: 33.3%;
+        }
+    }
+}
+
+.topics {
+    margin-top: 6.4rem;
+    margin-bottom: 4.2rem;
+
+    div {
+        text-align: center;
+        width: 18.1%;
+    }
+
+    img {
+        width: 7.2%;
+    }
+
+    h2 {
+        margin-bottom: 3.7rem;
+    }
+
+    h3 {
+        margin-top: 1.3rem;
+        margin-bottom: 4.2rem;
+    }
+}
+
+.novelties {
+    padding-top: 21.3rem;
+    padding-bottom: 15.1rem;
+
+    @media (max-width: $desktop-size) {
+        padding-top: 18rem;
+    }
+    button {
+        width: 24%;
+        margin: 0 auto;
+        min-width: 34.5rem;
+    }
+
+    h2 {
+
+        width: 70%;
+        margin-top: 0;
+
+        
+    }
+}
+
+footer {
+    height: 9.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 6.9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    p {
+        margin: 0;
+    }
+
+    .icons-container {
+        display: flex;
+        justify-content: space-between;
+        width: 23.2rem;
+        justify-self: right;
+        margin: 0;
+        i {
+            font-size: 1.8rem; 
+        }
+    }
+
+}
