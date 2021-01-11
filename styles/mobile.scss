@@ -247,7 +247,7 @@ header {
             max-width: 45rem;
         }
         
-        @media (min-width: 700px) {
+        @media (min-width: $small-screen-size) {
             iframe {
                 width: 40%;
                 margin: 2.5%;
