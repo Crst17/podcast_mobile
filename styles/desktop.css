@@ -74,6 +74,17 @@ header nav img {
   margin-left: 0rem;
 }
 
+.menu ul a:hover {
+  color: #00F3BB;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.menu ul a:active {
+  color: rgba(6, 10, 36, 0.56);
+  font-weight: 400;
+}
+
 section .header-title {
   margin: 12rem 13.9% 0 13.9%;
   font-size: 6.4rem;

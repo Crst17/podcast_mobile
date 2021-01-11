@@ -2,6 +2,7 @@ $button-background: #00F3BB;
 $text-color: #060A24;
 $white: #FFFFFF;
 $menu-background: #0000EC;
+$active-button-color: rgba(6,10,36,0.56);
 
 $tablet-size: 480px;
 $small-screen-size: 768px;
@@ -76,6 +77,17 @@ header {
             color: $text-color;
             margin-top: 0rem;
             margin-left: 0rem;
+
+            &:hover {
+                color: $button-background;
+                font-weight: 500;
+                text-decoration: line-through;
+            }
+
+            &:active {
+                color: $active-button-color;
+                font-weight: 400;
+            }
         }
     }
 }
