@@ -258,6 +258,7 @@ header .header-button {
   .episodes .iframes-container iframe {
     width: 40%;
     margin: 2.5%;
+    max-width: none;
   }
 }
 

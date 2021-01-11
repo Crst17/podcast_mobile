@@ -248,7 +248,8 @@ header {
         @media (min-width: 700px) {
             iframe {
                 width: 40%;
-                margin: 2.5%
+                margin: 2.5%;
+                max-width: none;
             }
         }
     }
