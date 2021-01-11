@@ -117,34 +117,51 @@ section .header-button {
   width: 100%;
 }
 
-.us {
-  position: relative;
-  top: 0;
-  margin-bottom: 0;
-  height: 62.4rem;
-}
-
-.us .us-image {
-  height: 66rem;
-  width: 31.8%;
-  display: inline-block;
-  position: relative;
-  left: 13.5%;
-  top: -10rem;
-}
-
 .us h2 {
-  margin-left: 0;
-  left: 50%;
-  position: absolute;
-  top: 7rem;
+  margin-bottom: 3.6rem;
 }
 
 .us p {
-  position: absolute;
-  left: 50%;
-  top: 17rem;
-  width: 32.2%;
+  padding: 0 13.9%;
+}
+
+@media (min-width: 1024px) {
+  .us {
+    position: relative;
+    top: 0;
+    margin-bottom: 0;
+    height: 52.4rem;
+  }
+  .us .us-image {
+    height: auto;
+    width: 31.8%;
+    display: inline-block;
+    position: relative;
+    left: 13.5%;
+    top: -10rem;
+  }
+  .us .us-image img {
+    max-height: 66rem;
+  }
+  .us h2 {
+    margin-left: 0;
+    left: 50%;
+    position: absolute;
+    top: 7rem;
+  }
+  .us p {
+    position: absolute;
+    left: 50%;
+    top: 17rem;
+    width: 32.2%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .guests h2 {
+    margin-top: 6.4rem;
+  }
 }
 
 .guests .images-container {

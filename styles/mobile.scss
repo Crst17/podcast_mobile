@@ -12,6 +12,8 @@ $semi-bold-weight: 600;
 
 $tablet-size: 480px;
 $small-screen-size: 768px;
+$desktop-size: 1024px;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -223,10 +225,6 @@ header {
         @include background-gradient();
         height: 130rem;
         margin-top: 2.4rem;
-
-        @media (min-width: 700px) {
-            height: 74.5rem;
-        }
     }
 
     h2 {

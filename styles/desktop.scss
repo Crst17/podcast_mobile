@@ -6,6 +6,7 @@ $menu-background: #0000EC;
 $tablet-size: 480px;
 $small-screen-size: 768px;
 $desktop-size: 1024px;
+$large-screen-size: 1200px;
 
 h2 {
     font-size: 4.8rem;
@@ -121,37 +122,61 @@ section {
 }
 
 .us {
-    position: relative;
-    top: 0; 
-    margin-bottom: 0;
-    height: 62.4rem;
-
-    .us-image {
-        height: 66rem;
-        width: 31.8%;
-        display: inline-block;
-        position: relative;
-        left: 13.5%;
-        top: -10rem;
-    }
     
     h2 {
-        margin-left: 0;
-        left: 50%;
-        position: absolute;
-        top: 7rem;
+        margin-bottom: 3.6rem;
     }
-
     p {
-        position: absolute;
-        left: 50%;
-        top: 17rem;
-        width: 32.2%;
+        padding: 0 13.9%;
     }
 }
 
+@media (min-width: $desktop-size) {
+    
+    .us {
+        position: relative;
+        top: 0; 
+        margin-bottom: 0;
+        height: 52.4rem;
+        
+        .us-image {
+            height: auto;   
+            width: 31.8%;
+            display: inline-block;
+            position: relative;
+            left: 13.5%;
+            top: -10rem;
+            
+            img {
+                max-height: 66rem;
+            }
+        }
+        
+        h2 {
+            margin-left: 0;
+            left: 50%;
+            position: absolute;
+            top: 7rem;
+        }
+        
+        p {
+            position: absolute;
+            left: 50%;
+            top: 17rem;
+            width: 32.2%;
+            padding: 0;
+        }
+    }
+}
+    
 .guests {
 
+    @media (min-width: $large-screen-size) {
+        h2 {
+            margin-top: 6.4rem;
+        }
+    }
+        
     .images-container{
         width: 100%;
         margin-top: 3.6rem;
