@@ -10,6 +10,8 @@ $medium-weight: 500;
 $regular-weight: 400;
 $semi-bold-weight: 600;
 
+$tablet-size: 480px;
+$small-screen-size: 768px;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,14 +35,13 @@ body {
     font-weight: $medium-weight;
     letter-spacing: 0;
     line-height: 2.2rem;
-    width: 90%;
+    width: 28.8rem;
     height: 4.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 5%;
-    max-width: 380px;
-    margin: 0 auto;
+    // margin: 0 auto;
     &:hover {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     }
@@ -150,7 +151,7 @@ h3 {
         background-color: $menu-background;
         width: 100%;
         list-style: none;
-        max-height: 0px;
+        max-height: 0rem;
         transition: max-height 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         overflow: hidden;
 
@@ -173,6 +174,7 @@ h3 {
     }  
 }
 
+
 header {
     width: 100%;
     margin-bottom: 2.4rem;
@@ -193,7 +195,11 @@ header {
     .header-title {
         margin-top: 2.9rem;
         @include titles-style();
+        max-width: 22.2rem;
 
+        @media (min-width: $tablet-size) {
+            max-width: 100%;
+        }
         .world {
             text-decoration: line-through;
         }
@@ -229,13 +235,21 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        padding: 0 5%;
 
         iframe {
             border: none;
-            height: 255px;
+            height: 232px;
             width: 93.1%;
             margin-bottom: 1.6rem;
-            max-width: 48rem;
+            max-width: 45rem;
+        }
+        
+        @media (min-width: 700px) {
+            iframe {
+                width: 40%;
+                margin: 2.5%
+            }
         }
     }
 }
@@ -274,7 +288,7 @@ header {
         img {
             width: 100%;
         }
-        @media (min-width: 480px) {
+        @media (min-width: $tablet-size) {
             img {
                 width: 50%;
             }
@@ -317,13 +331,20 @@ header {
 
     h2 {
         text-align: center;
+        margin: 0 auto;
         color: $white;
         margin-bottom: 3.6rem;
+        width: 65%;
+        margin-top: 3rem;
+    }
+
+    button {
+        margin: 0 auto;
     }
 }
 
 footer {
-    height: 120px;
+    height: 12rem;
     padding-bottom: 3.1rem;
     padding-top: 2.4rem;
 
@@ -336,9 +357,9 @@ footer {
         display: flex;
         justify-content: space-evenly;
         margin-top: 1.6rem;
+        i {
+            font-size: 1.6rem; 
+        }
     }
 
-    i {
-        font-size: 1.6rem; 
-    }
 }
